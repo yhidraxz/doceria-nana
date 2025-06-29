@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { PrimaryButton } from "./primaryButton";
+import heroImage from "../assets/heroImage.jpg";
 
 export function HeroSection() {
   const navigate = useNavigate();
@@ -7,7 +8,7 @@ export function HeroSection() {
   return (
     <div className="hero min-h-screen bg-pink-50 flex flex-col items-center justify-center text-center px-4 py-10">
       <img
-        src="/src/assets/heroImage.jpg"
+        src={heroImage}
         alt="Brigadeiros deliciosos"
         className="w-48 h-48 object-cover rounded-full shadow-lg mb-5"
       />
